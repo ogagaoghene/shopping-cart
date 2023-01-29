@@ -1,6 +1,6 @@
 import React from 'react';
 
-class DisplayForm extends React.Component {
+class Signin extends React.Component {
   constructor(props) {
     super(props);
   
@@ -47,4 +47,4 @@ class DisplayForm extends React.Component {
   }
 }
 
-export default DisplayForm;
+export default Signin;

@@ -1,12 +1,12 @@
 import React from 'react';
-import DisplayForm from './Components/DisplayForm';
+import Signin from './Components/Signin';
 import './index.css';
 
 class App extends React.Component {
   render() {
     return (
       <div>
-        <DisplayForm />
+        <Signin />
       </div>
     )
   }
