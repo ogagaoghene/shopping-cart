@@ -11,16 +11,30 @@ class Signin extends React.Component {
       email: '',
       errors: []
     };
+
+    this.validateUsernameonBlur = this.validateUsernameonBlur.bind(this);
   }
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Submitting form...");
+    console.log(event);
+  }
+
+  validateUsernameonBlur = (event) => {
+    console.log("I should validate whatever is in", event.target.value);
+  }
+
   render() {
     return (
       <div className="wrapper">
-         <form>
+         <form onSubmit={this.handleSubmit}>
           <input 
             type='text'
             name='username'
             id='username'
             placeholder='Username'
+            onBlur={this.validateUsernameonBlur}
           />
            <input 
             type='text'
